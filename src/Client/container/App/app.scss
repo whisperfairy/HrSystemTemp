@@ -1,0 +1,21 @@
+html,body{
+  height: 100%;
+  font-size: 16px;
+}
+.app {
+  height: 100%;
+  min-height: 720px;
+}
+.app .title {
+  width: 50%;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+}
+.app .layout_Main {
+  height: 100vh;
+  min-height: 720px;
+}
+.app .layout_Content {
+  margin-top: 24px;
+}

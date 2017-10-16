@@ -1,0 +1,86 @@
+/**
+ *
+ * LoginComp.scss 文件作用
+ * @author hurong<353486474@QQ.COM>
+ * @date 2017/10/14
+ *
+ * @内容 作用
+ * @内容 作用
+ */
+@mixin Login__ColorBG($degree,$height){
+  transform: skewY($degree);
+  background-image: linear-gradient(-89deg, #EA785A 0%, #EE8768 30%, #EE9F7A 70%);
+  z-index: 1;
+  height: $height;
+  width: 100%;
+  position: absolute;
+  transform-origin: 0;
+  top: 0;
+}
+.LoginFormContainer{
+  width: 100%;
+  height: 100%;
+}
+.Login__Container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  .Login__ColorBG--orange{
+    @include Login__ColorBG(-9deg,100%)
+  }
+  @media (min-width: 991px) {
+    .Login__ColorBG--orange{
+      @include Login__ColorBG(-29deg,1020px)
+    }
+  }
+
+  .Login__LowerColorBG--Gray{
+
+  }
+  @media (min-width: 1200px) {
+    .hidden-xl-up{
+      display: none !important;
+    }
+  }
+  .illustrations{
+    position:relative;top:-603px;right:-512px;z-index:2
+  }
+  @media (min-width: 1200px) and (max-width: 1299px)
+  {.illustrations,.illustrations{
+    right:-533px;top:-744px;
+  }}
+  @media (min-width: 1300px) and (max-width: 1439px)
+  {.illustrations,.illustrations{
+    right:-601px;top:-782px
+  }}
+  @media (min-width: 90em){
+    .illustrations,.illustrations{
+      top:-761px;right:-622px}}
+  @media (min-width: 105em){
+    .illustrations,.illustrations{
+      top:-665px;right:-640px}}
+}
+//
+.home .hero .illustrations,.home .inner .illustrations
+{position:relative;top:-603px;right:-512px;z-index:2}
+@media (min-width: 1200px) and (max-width: 1299px){
+  .home .hero .illustrations,.home .inner .illustrations
+  {right:-533px;top:-744px}}
+@media (min-width: 1300px) and (max-width: 1439px){
+  .home .hero .illustrations,.home .inner .illustrations
+  {right:-601px;top:-782px}}
+@media (min-width: 90em){
+  .home .hero .illustrations,.home .inner .illustrations{
+    top:-761px;right:-622px}}
+@media (min-width: 105em){
+  .home .hero .illustrations,.home .inner .illustrations{
+    top:-665px;right:-640px}}
+.home .hero .diag,.home .inner .diag{height:100%;overflow:hidden;width:100%;position:absolute;top:0;transform-origin:0;-webkit-transform-origin:0}
+.home .hero .hero-diag,.home .inner .hero-diag{transform:skewY(-9deg);-webkit-transform:skewY(-9deg);background-image:linear-gradient(-89deg, #EA785A 0%, #EE8768 30%, #EE9F7A 70%);z-index:1}
+@media (min-width: 62em){
+  .home .hero .hero-diag,.home .inner .hero-diag
+  {transform:skewY(-29deg);-webkit-transform:skewY(-29deg)}}
+.home .hero .hero-lower-diag,.home .inner .hero-lower-diag {
+  background-image:linear-gradient(-182deg, #FBFCFC 0%, #EAEEF2 74%);background-image:linear-gradient(to bottom, #e0e7ef, #fbfcfc 90%);bottom:-132px}
+.home .logos{position:relative;bottom:60px;height:0;text-align:center}@media (min-width: 60em){.home .logos{bottom:100px}}

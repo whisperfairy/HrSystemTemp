@@ -1,0 +1,19 @@
+// Typography elements
+$nfe-font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
+$nfe-text-color-light:  $white !default;
+$nfe-text-color-light-hex: $white !default; // for hover
+$nfe-text-color-primary: unquote("rgba(#{$rgb-black}, 0.87)") !default;
+$nfe-text-color-primary-hex: $black !default; // for hover
+$nfe-icon-color: rgba(0,0,0,0.5) !default;
+
+$nfe-label-color: unquote("rgba(#{$rgb-black}, 0.26)") !default;
+$nfe-label-color-toggle-focus: unquote("rgba(#{$rgb-black}, .54)") !default;//label选中后
+
+$nfe-font-weight-light:          300 !default;
+$nfe-font-weight-normal:         400 !default;
+$nfe-font-weight-semi:           500 !default;
+$nfe-font-weight-bold:           600 !default;
+
+$nfe-line-height-general:          1.5 !default;
+$nfe-line-height:                 20px !default;
+$nfe-line-height-lg:              54px !default;

@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "outDir": "./built/",
+        "sourceMap": true,
+        "module": "ES6",
+        "moduleResolution": "Node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "target": "es6",
+        "jsx": "react",
+        "allowSyntheticDefaultImports":true,
+        "allowJs": true
+    },
+    "awesomeTypescriptLoaderOptions": {
+        "useWebpackText": true,
+        "forkChecker": true
+    },
+    "include": [
+        "../src/**/*",
+        "../declarations.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "../src/Server/*"
+    ]
+}
